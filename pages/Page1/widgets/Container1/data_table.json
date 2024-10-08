@@ -36,7 +36,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728359848533,
+  "columnUpdatedAt": 1728360905696,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -202,7 +202,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "id",
       "notation": "standard",
       "originalId": "id",
