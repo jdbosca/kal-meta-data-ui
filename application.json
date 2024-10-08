@@ -18,8 +18,12 @@
   "icon": "single-person",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Contracts",
       "isDefault": true
+    },
+    {
+      "id": "Kal_meta_data.kal_smartcare_common_asset_attributes",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
