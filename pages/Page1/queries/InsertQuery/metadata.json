@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_3139d77a-91bf-4da1-b48c-86d62f15c220",
-  "id": "Kal_meta_data.kal_smartcare_common_asset_attributes_InsertQuery",
+  "gitSyncId": "6704ace79f84094942828663_eff48fc5-7077-4d01-9dfb-7d8ce22e87bf",
+  "id": "Page1_InsertQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "InsertQuery",
-    "pageId": "Kal_meta_data.kal_smartcare_common_asset_attributes",
+    "pageId": "Page1",
     "userSetOnLoad": false
   }
 }

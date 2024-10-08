@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_0ec30319-511f-45b0-bd6d-9e9a9835bd1f",
-  "id": "Kal_meta_data.kal_smartcare_common_asset_attributes_DeleteQuery",
+  "gitSyncId": "6704ace79f84094942828663_6deba950-77dc-4e63-b019-b21aa80022c2",
+  "id": "Page1_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "DeleteQuery",
-    "pageId": "Kal_meta_data.kal_smartcare_common_asset_attributes",
+    "pageId": "Page1",
     "userSetOnLoad": false
   }
 }
