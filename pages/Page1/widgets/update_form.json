@@ -245,7 +245,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
