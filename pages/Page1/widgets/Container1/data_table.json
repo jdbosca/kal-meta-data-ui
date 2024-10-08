@@ -28,15 +28,14 @@
     "smartcare_subscription_contract_start",
     "smartcare_subscription_contract_end",
     "smartcare_subscription",
-    "smartcare_subscription_origin",
-    "customColumn1"
+    "smartcare_subscription_origin"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728360905696,
+  "columnUpdatedAt": 1728360980993,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -74,9 +73,6 @@
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonLabel"
-    },
-    {
       "key": "accentColor"
     },
     {
@@ -84,9 +80,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
       "key": "primaryColumns.id.computedValue"
@@ -112,16 +105,10 @@
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
       "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
-    {
-      "key": "primaryColumns.customColumn1.onClick"
-    },
     {
       "key": "onPageChange"
     },
@@ -156,30 +143,6 @@
   "parentRowSpace": 10,
   "primaryColumnId": "smartcare_subscription_id",
   "primaryColumns": {
-    "customColumn1": {
-      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-      "boxShadow": "none",
-      "buttonColor": "#DD4B34",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-      "buttonLabelColor": "#FFFFFF",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
-      "computedValue": "",
-      "enableFilter": true,
-      "enableSort": true,
-      "id": "customColumn1",
-      "index": 5,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "Delete",
-      "labelColor": "#FFFFFF",
-      "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
-      "sticky": "right",
-      "width": 150
-    },
     "id": {
       "alias": "id",
       "allowCellWrapping": false,
