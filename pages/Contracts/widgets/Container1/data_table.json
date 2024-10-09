@@ -492,7 +492,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "smartcare_influx_retention",
+      "label": "influx retention",
       "notation": "standard",
       "originalId": "smartcare_influx_retention",
       "sticky": "",
