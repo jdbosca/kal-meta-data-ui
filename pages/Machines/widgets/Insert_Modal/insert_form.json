@@ -326,8 +326,7 @@
           "label": "Customer Commodity",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "customer_commodity",
-          "position": 4,
-          "sourceData": null
+          "position": 4
         },
         "customer_country": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -348,8 +347,7 @@
           "label": "Customer Country",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "customer_country",
-          "position": 2,
-          "sourceData": null
+          "position": 2
         },
         "customer_operator": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -370,8 +368,7 @@
           "label": "Customer Operator",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "customer_operator",
-          "position": 5,
-          "sourceData": null
+          "position": 5
         },
         "customer_owner": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -392,8 +389,7 @@
           "label": "Customer Owner",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "customer_owner",
-          "position": 3,
-          "sourceData": null
+          "position": 3
         },
         "delivery_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -414,8 +410,7 @@
           "label": "Delivery Date",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "delivery_date",
-          "position": 10,
-          "sourceData": null
+          "position": 10
         },
         "engine_serial_number": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -436,8 +431,7 @@
           "label": "Engine Serial Number",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "engine_serial_number",
-          "position": 11,
-          "sourceData": null
+          "position": 11
         },
         "id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -454,7 +448,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
@@ -476,7 +470,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Insert Date",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "insert_date",
@@ -502,8 +496,7 @@
           "label": "Kal Branch",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kal_branch",
-          "position": 6,
-          "sourceData": null
+          "position": 6
         },
         "kal_project": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -524,8 +517,7 @@
           "label": "Kal Project",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kal_project",
-          "position": 9,
-          "sourceData": null
+          "position": 9
         },
         "kal_region": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -546,8 +538,7 @@
           "label": "Kal Region",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kal_region",
-          "position": 7,
-          "sourceData": null
+          "position": 7
         },
         "kal_state": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -568,8 +559,7 @@
           "label": "Kal State",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kal_state",
-          "position": 8,
-          "sourceData": null
+          "position": 8
         },
         "update_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -586,7 +576,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Update Date",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "update_date",
@@ -624,7 +614,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Insert Row",
+  "title": "Insert Machine",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
