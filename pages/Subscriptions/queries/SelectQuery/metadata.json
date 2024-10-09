@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_c7ff4359-5c60-4a54-8a3b-93d56cdb99c9",
-  "id": "Contracts_SelectQuery",
+  "gitSyncId": "6704ace79f84094942828663_73cf1a2b-2224-4262-82e4-c9a58c5c4539",
+  "id": "Subscriptions_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM kal_meta_data.\"kal_smartcare_contract_asset_attributes\"\nWHERE \"asset_id\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'asset_id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM kal_meta_data.\"kal_smartcare_subscription_id_attributes\"\nWHERE \"smartcare_subscription_id\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'smartcare_subscription_id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Contracts",
+    "pageId": "Subscriptions",
     "userSetOnLoad": true
   }
 }

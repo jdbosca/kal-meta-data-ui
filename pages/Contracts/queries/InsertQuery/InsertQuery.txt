@@ -1,18 +1,28 @@
-INSERT INTO kal_meta_data."kal_smartcare_subscription_id_attributes" (
-	"smartcare_subscription_id",
-	"smartcare_subscription_id",
+INSERT INTO kal_meta_data."kal_smartcare_contract_asset_attributes" (
+	"asset_id",
+	"asset_id",
 	"id",
-	"smartcare_subscription_id_po_number",
-	"smartcare_subscription_contract_start",
-	"smartcare_subscription_contract_end",
-	"smartcare_subscription",
-	"smartcare_subscription_origin")
+	"smartcare_subscription_id",
+	"smartcare_datasource",
+	"smartcare_influx_retention",
+	"er_engagement",
+	"er_start_date",
+	"er_end_date",
+	"smartcare_adhoc_support_id",
+	"smartcare_adhoc_support_origin",
+	"insert_date"
+)
 VALUES (
-	'{{insert_form.formData.smartcare_subscription_id}}',
-	'{{insert_form.formData.smartcare_subscription_id}}',
+	'{{insert_form.formData.asset_id}}',
+	'{{insert_form.formData.asset_id}}',
 	'{{insert_form.formData.id}}',
-	'{{insert_form.formData.smartcare_subscription_id_po_number}}',
-	'{{insert_form.formData.smartcare_subscription_contract_start}}',
-	'{{insert_form.formData.smartcare_subscription_contract_end}}',
-	'{{insert_form.formData.smartcare_subscription}}',
-	'{{insert_form.formData.smartcare_subscription_origin}}');
+	'{{insert_form.formData.smartcare_subscription_id}}',
+	'{{insert_form.formData.smartcare_datasource}}',
+	'{{insert_form.formData.smartcare_influx_retention}}',
+	'{{insert_form.formData.er_engagement}}',
+	'{{insert_form.formData.er_start_date}}',
+	'{{insert_form.formData.er_end_date}}',
+	'{{insert_form.formData.smartcare_adhoc_support_id}}',
+	'{{insert_form.formData.smartcare_adhoc_support_origin}}',
+	'{{insert_form.formData.insert_date}}'
+);

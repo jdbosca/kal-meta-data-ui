@@ -1,2 +1,2 @@
-DELETE FROM kal_meta_data."kal_smartcare_subscription_id_attributes"
-  WHERE "smartcare_subscription_id" = {{data_table.triggeredRow.smartcare_subscription_id}};
+DELETE FROM kal_meta_data."kal_smartcare_contract_asset_attributes"
+  WHERE "asset_id" = {{data_table.triggeredRow.asset_id}};

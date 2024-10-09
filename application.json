@@ -18,11 +18,15 @@
   "icon": "single-person",
   "pages": [
     {
-      "id": "Contracts",
+      "id": "Subscriptions",
       "isDefault": true
     },
     {
       "id": "Machines",
+      "isDefault": false
+    },
+    {
+      "id": "Contracts",
       "isDefault": false
     }
   ],

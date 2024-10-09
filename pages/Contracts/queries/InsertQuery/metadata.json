@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_d019aa7c-a26b-4001-b37c-e094f68de77b",
+  "gitSyncId": "6704ace79f84094942828663_2203f7a2-1a59-4e36-9313-f2d6b41cd75c",
   "id": "Contracts_InsertQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO kal_meta_data.\"kal_smartcare_subscription_id_attributes\" (\n\t\"smartcare_subscription_id\",\n\t\"smartcare_subscription_id\",\n\t\"id\",\n\t\"smartcare_subscription_id_po_number\",\n\t\"smartcare_subscription_contract_start\",\n\t\"smartcare_subscription_contract_end\",\n\t\"smartcare_subscription\",\n\t\"smartcare_subscription_origin\")\nVALUES (\n\t'{{insert_form.formData.smartcare_subscription_id}}',\n\t'{{insert_form.formData.smartcare_subscription_id}}',\n\t'{{insert_form.formData.id}}',\n\t'{{insert_form.formData.smartcare_subscription_id_po_number}}',\n\t'{{insert_form.formData.smartcare_subscription_contract_start}}',\n\t'{{insert_form.formData.smartcare_subscription_contract_end}}',\n\t'{{insert_form.formData.smartcare_subscription}}',\n\t'{{insert_form.formData.smartcare_subscription_origin}}');",
+      "body": "INSERT INTO kal_meta_data.\"kal_smartcare_contract_asset_attributes\" (\n\t\"asset_id\",\n\t\"asset_id\",\n\t\"id\",\n\t\"smartcare_subscription_id\",\n\t\"smartcare_datasource\",\n\t\"smartcare_influx_retention\",\n\t\"er_engagement\",\n\t\"er_start_date\",\n\t\"er_end_date\",\n\t\"smartcare_adhoc_support_id\",\n\t\"smartcare_adhoc_support_origin\",\n\t\"insert_date\"\n)\nVALUES (\n\t'{{insert_form.formData.asset_id}}',\n\t'{{insert_form.formData.asset_id}}',\n\t'{{insert_form.formData.id}}',\n\t'{{insert_form.formData.smartcare_subscription_id}}',\n\t'{{insert_form.formData.smartcare_datasource}}',\n\t'{{insert_form.formData.smartcare_influx_retention}}',\n\t'{{insert_form.formData.er_engagement}}',\n\t'{{insert_form.formData.er_start_date}}',\n\t'{{insert_form.formData.er_end_date}}',\n\t'{{insert_form.formData.smartcare_adhoc_support_id}}',\n\t'{{insert_form.formData.smartcare_adhoc_support_origin}}',\n\t'{{insert_form.formData.insert_date}}'\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,7 @@
       "name": "postgres metadata",
       "pluginId": "postgres-plugin"
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "InsertQuery",
     "pageId": "Contracts",
     "userSetOnLoad": false

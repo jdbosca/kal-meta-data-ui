@@ -1,9 +1,13 @@
-UPDATE kal_meta_data."kal_smartcare_subscription_id_attributes" SET
-		"smartcare_subscription_id" = '{{update_form.fieldState.smartcare_subscription_id.isVisible ? update_form.formData.smartcare_subscription_id : update_form.sourceData.smartcare_subscription_id}}',
+UPDATE kal_meta_data."kal_smartcare_contract_asset_attributes" SET
+		"asset_id" = '{{update_form.fieldState.asset_id.isVisible ? update_form.formData.asset_id : update_form.sourceData.asset_id}}',
 		"id" = '{{update_form.fieldState.id.isVisible ? update_form.formData.id : update_form.sourceData.id}}',
-    "smartcare_subscription_id_po_number" = '{{update_form.fieldState.smartcare_subscription_id_po_number.isVisible ? update_form.formData.smartcare_subscription_id_po_number : update_form.sourceData.smartcare_subscription_id_po_number}}',
-		"smartcare_subscription_contract_start" = '{{update_form.fieldState.smartcare_subscription_contract_start.isVisible ? update_form.formData.smartcare_subscription_contract_start : update_form.sourceData.smartcare_subscription_contract_start}}',
-		"smartcare_subscription_contract_end" = '{{update_form.fieldState.smartcare_subscription_contract_end.isVisible ? update_form.formData.smartcare_subscription_contract_end : update_form.sourceData.smartcare_subscription_contract_end}}',
-		"smartcare_subscription" = '{{update_form.fieldState.smartcare_subscription.isVisible ? update_form.formData.smartcare_subscription : update_form.sourceData.smartcare_subscription}}',
-		"smartcare_subscription_origin" = '{{update_form.fieldState.smartcare_subscription_origin.isVisible ? update_form.formData.smartcare_subscription_origin : update_form.sourceData.smartcare_subscription_origin}}'
-WHERE "smartcare_subscription_id" = {{data_table.selectedRow.smartcare_subscription_id}};
+    "smartcare_subscription_id" = '{{update_form.fieldState.smartcare_subscription_id.isVisible ? update_form.formData.smartcare_subscription_id : update_form.sourceData.smartcare_subscription_id}}',
+		"smartcare_datasource" = '{{update_form.fieldState.smartcare_datasource.isVisible ? update_form.formData.smartcare_datasource : update_form.sourceData.smartcare_datasource}}',
+		"smartcare_influx_retention" = '{{update_form.fieldState.smartcare_influx_retention.isVisible ? update_form.formData.smartcare_influx_retention : update_form.sourceData.smartcare_influx_retention}}',
+		"er_engagement" = '{{update_form.fieldState.er_engagement.isVisible ? update_form.formData.er_engagement : update_form.sourceData.er_engagement}}',
+		"er_start_date" = '{{update_form.fieldState.er_start_date.isVisible ? update_form.formData.er_start_date : update_form.sourceData.er_start_date}}',
+		"er_end_date" = '{{update_form.fieldState.er_end_date.isVisible ? update_form.formData.er_end_date : update_form.sourceData.er_end_date}}',
+		"smartcare_adhoc_support_id" = '{{update_form.fieldState.smartcare_adhoc_support_id.isVisible ? update_form.formData.smartcare_adhoc_support_id : update_form.sourceData.smartcare_adhoc_support_id}}',
+		"smartcare_adhoc_support_origin" = '{{update_form.fieldState.smartcare_adhoc_support_origin.isVisible ? update_form.formData.smartcare_adhoc_support_origin : update_form.sourceData.smartcare_adhoc_support_origin}}',
+		"insert_date" = '{{update_form.fieldState.insert_date.isVisible ? update_form.formData.insert_date : update_form.sourceData.insert_date}}'
+	WHERE "asset_id" = {{data_table.selectedRow.asset_id}};
