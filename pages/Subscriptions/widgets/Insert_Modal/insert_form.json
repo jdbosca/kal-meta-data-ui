@@ -410,7 +410,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Add Contract",
+  "title": "Add Subscription",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
