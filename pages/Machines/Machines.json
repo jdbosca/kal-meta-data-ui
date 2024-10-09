@@ -1,6 +1,7 @@
 {
   "gitSyncId": "6704ace79f84094942828663_fd6d6231-b4b3-497d-b918-fac13b5d74f6",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Machines",
+    "slug": "machines"
   }
 }
