@@ -166,7 +166,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "id",
+      "label": "subscription id",
       "notation": "standard",
       "originalId": "id",
       "sticky": "",
