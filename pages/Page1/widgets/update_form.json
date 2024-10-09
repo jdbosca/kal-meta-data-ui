@@ -440,7 +440,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
@@ -610,7 +610,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Update Row asset_id: {{data_table.selectedRow.asset_id}}",
+  "title": "asset id: {{data_table.selectedRow.asset_id}}",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
