@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_9988290d-c015-402c-8f98-0473833a1b40",
-  "id": "Contracts_DeleteQuery",
+  "gitSyncId": "6704ace79f84094942828663_6deba950-77dc-4e63-b019-b21aa80022c2",
+  "id": "Common Machine Attributes_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM kal_meta_data.\"kal_smartcare_contract_asset_attributes\"\n  WHERE \"asset_id\" = {{data_table.triggeredRow.asset_id}};",
+      "body": "DELETE FROM kal_meta_data.\"kal_smartcare_common_asset_attributes\"\n  WHERE \"asset_id\" = {{data_table.triggeredRow.asset_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "DeleteQuery",
-    "pageId": "Contracts",
+    "pageId": "Common Machine Attributes",
     "userSetOnLoad": false
   }
 }

@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6704ace79f84094942828663_c7ff4359-5c60-4a54-8a3b-93d56cdb99c9",
-  "id": "Contracts_SelectQuery",
+  "id": "Machine Contract Details_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Contracts",
+    "pageId": "Machine Contract Details",
     "userSetOnLoad": true
   }
 }

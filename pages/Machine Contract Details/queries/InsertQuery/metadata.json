@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6704ace79f84094942828663_2203f7a2-1a59-4e36-9313-f2d6b41cd75c",
-  "id": "Contracts_InsertQuery",
+  "id": "Machine Contract Details_InsertQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "InsertQuery",
-    "pageId": "Contracts",
+    "pageId": "Machine Contract Details",
     "userSetOnLoad": false
   }
 }

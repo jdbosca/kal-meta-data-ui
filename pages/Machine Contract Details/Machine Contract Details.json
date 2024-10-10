@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_fd6d6231-b4b3-497d-b918-fac13b5d74f6",
+  "gitSyncId": "6704ace79f84094942828663_8616a337-849a-4545-bdd4-4a68609bb535",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "Machines",
-    "slug": "machines"
+    "name": "Machine Contract Details",
+    "slug": "machine-contract-details"
   }
 }

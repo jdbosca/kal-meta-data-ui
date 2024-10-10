@@ -22,11 +22,11 @@
       "isDefault": true
     },
     {
-      "id": "Machines",
+      "id": "Common Machine Attributes",
       "isDefault": false
     },
     {
-      "id": "Contracts",
+      "id": "Machine Contract Details",
       "isDefault": false
     }
   ],
