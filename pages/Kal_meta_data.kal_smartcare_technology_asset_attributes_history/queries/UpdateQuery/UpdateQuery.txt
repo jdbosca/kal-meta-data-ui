@@ -1,0 +1,8 @@
+UPDATE kal_meta_data."kal_smartcare_technology_asset_attributes_history" SET
+		"asset_id" = '{{update_form.fieldState.asset_id.isVisible ? update_form.formData.asset_id : update_form.sourceData.asset_id}}',
+		"technology_fitted" = '{{update_form.fieldState.technology_fitted.isVisible ? update_form.formData.technology_fitted : update_form.sourceData.technology_fitted}}',
+    "technology_comm_type" = '{{update_form.fieldState.technology_comm_type.isVisible ? update_form.formData.technology_comm_type : update_form.sourceData.technology_comm_type}}',
+		"technology_comm_quality" = '{{update_form.fieldState.technology_comm_quality.isVisible ? update_form.formData.technology_comm_quality : update_form.sourceData.technology_comm_quality}}',
+		"technology_support_priority" = '{{update_form.fieldState.technology_support_priority.isVisible ? update_form.formData.technology_support_priority : update_form.sourceData.technology_support_priority}}',
+		"update_date" = '{{update_form.fieldState.update_date.isVisible ? update_form.formData.update_date : update_form.sourceData.update_date}}'
+WHERE "id" = {{data_table.selectedRow.id}};
