@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6704ace79f84094942828663_6deba950-77dc-4e63-b019-b21aa80022c2",
-  "id": "Common Machine Attributes_DeleteQuery",
+  "id": "Asset Attributes_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "DeleteQuery",
-    "pageId": "Common Machine Attributes",
+    "pageId": "Asset Attributes",
     "userSetOnLoad": false
   }
 }

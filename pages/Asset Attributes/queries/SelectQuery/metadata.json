@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6704ace79f84094942828663_c3e3f382-1d6c-4fd1-b032-db6416fa6182",
-  "id": "Common Machine Attributes_SelectQuery",
+  "id": "Asset Attributes_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Common Machine Attributes",
+    "pageId": "Asset Attributes",
     "userSetOnLoad": true
   }
 }
