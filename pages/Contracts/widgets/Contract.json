@@ -223,21 +223,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "id",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
           "position": 0,
-          "sourceData": 4
+          "sourceData": ""
         },
         "smartcare_subscription": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
@@ -245,9 +245,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "smartcare_subscription",
           "isCustomField": false,
@@ -259,7 +259,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription",
           "position": 4,
-          "sourceData": 3
+          "sourceData": ""
         },
         "smartcare_subscription_contract_end": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
@@ -311,9 +311,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_id_po_number))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "smartcare_subscription_id_po_number",
           "isCustomField": false,
@@ -325,7 +325,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription_id_po_number",
           "position": 1,
-          "sourceData": "45030720564503070000"
+          "sourceData": ""
         },
         "smartcare_subscription_origin": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
@@ -333,9 +333,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_origin))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "smartcare_subscription_origin",
           "isCustomField": false,
@@ -347,7 +347,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription_origin",
           "position": 5,
-          "sourceData": 2
+          "sourceData": ""
         }
       },
       "dataType": "object",

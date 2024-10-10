@@ -35,7 +35,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728360980993,
+  "columnUpdatedAt": 1728538728078,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -182,7 +182,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "number",
+      "columnType": "text",
       "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"smartcare_subscription\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
