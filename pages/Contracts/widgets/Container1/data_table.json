@@ -124,6 +124,7 @@
   "hideCard": false,
   "horizontalAlignment": "LEFT",
   "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "inlineEditingSaveOption": "CUSTOM",
   "isLoading": false,
   "isSortable": true,
   "isVisible": "true",
