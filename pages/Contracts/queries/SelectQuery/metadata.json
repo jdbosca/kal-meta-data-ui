@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6704ace79f84094942828663_73cf1a2b-2224-4262-82e4-c9a58c5c4539",
-  "id": "Subscriptions_SelectQuery",
+  "id": "Contracts_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Subscriptions",
+    "pageId": "Contracts",
     "userSetOnLoad": true
   }
 }
