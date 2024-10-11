@@ -22,8 +22,8 @@
     }
   },
   "columnOrder": [
-    "id",
     "asset_id",
+    "id",
     "smartcare_subscription_id",
     "smartcare_datasource",
     "smartcare_influx_retention",
@@ -40,7 +40,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728513790811,
+  "columnUpdatedAt": 1728610290704,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -155,6 +155,7 @@
   "label": "Data",
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
+  "multiRowSelection": true,
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
@@ -189,7 +190,7 @@
       "label": "asset id",
       "notation": "standard",
       "originalId": "asset_id",
-      "sticky": "",
+      "sticky": "left",
       "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
