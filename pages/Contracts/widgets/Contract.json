@@ -103,9 +103,6 @@
       "key": "schema.__root_schema__.cellBorderRadius"
     },
     {
-      "key": "title"
-    },
-    {
       "key": "resetButtonStyles.buttonColor"
     },
     {
@@ -396,7 +393,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "{{data_table.selectedRow.smartcare_subscription_id}}",
+  "title": "Contract Update",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
