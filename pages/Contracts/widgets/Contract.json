@@ -251,7 +251,7 @@
           "children": {},
           "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Multiselect",
+          "fieldType": "Select",
           "identifier": "smartcare_subscription",
           "isCustomField": false,
           "isDisabled": false,
@@ -260,20 +260,7 @@
           "isVisible": true,
           "label": "Subscription",
           "labelTextSize": "0.875rem",
-          "options": [
-            {
-              "label": "Blue",
-              "value": "BLUE"
-            },
-            {
-              "label": "Green",
-              "value": "GREEN"
-            },
-            {
-              "label": "Red",
-              "value": "RED"
-            }
-          ],
+          "options": "[\n  {\n    \"label\": \"Basic Data\",\n    \"value\": \"Basic Data\"\n  },\n  {\n    \"label\": \"SmartCare Advanced Data\",\n    \"value\": \"SmartCare Advanced Data\"\n  },\n  {\n    \"label\": \"SmartCare Partner\",\n    \"value\": \"SmartCare Partner\"\n  },\n  {\n    \"label\": \"SmartCare Embedded\",\n    \"value\": \"SmartCare Embedded\"\n  }\n]",
           "originalIdentifier": "smartcare_subscription",
           "position": 4,
           "serverSideFiltering": false,
@@ -372,20 +359,7 @@
           "isVisible": true,
           "label": "Origin",
           "labelTextSize": "0.875rem",
-          "options": [
-            {
-              "label": "Blue",
-              "value": "BLUE"
-            },
-            {
-              "label": "Green",
-              "value": "GREEN"
-            },
-            {
-              "label": "Red",
-              "value": "RED"
-            }
-          ],
+          "options": "[\n  {\n    \"label\": \"Point of Sale\",\n    \"value\": \"Point of Sale\"\n  },\n  {\n    \"label\": \"Mining Solutions \",\n    \"value\": \"Mining Solutions \"\n  },\n  {\n    \"label\": \"KAL Key Accounts\",\n    \"value\": \"KAL Key Accounts\"\n  },\n  {\n    \"label\": \"KAL Service\",\n    \"value\": \"KAL Service\"\n  },\n  {\n    \"label\": \"Global CI Initiative\",\n    \"value\": \"Global CI Initiative\"\n  },\n  {\n    \"label\": \"MARC Contract\",\n    \"value\": \"MARC Contract\"\n  }\n]",
           "originalIdentifier": "smartcare_subscription_origin",
           "position": 5,
           "serverSideFiltering": false,
