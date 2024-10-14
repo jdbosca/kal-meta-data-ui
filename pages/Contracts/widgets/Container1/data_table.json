@@ -136,6 +136,7 @@
   "label": "Data",
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
+  "multiRowSelection": true,
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
