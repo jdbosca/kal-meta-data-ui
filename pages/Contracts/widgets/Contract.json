@@ -247,18 +247,32 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "smartcare_subscription",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Subscription",
           "labelTextSize": "0.875rem",
+          "options": [
+            {
+              "label": "Blue",
+              "value": "BLUE"
+            },
+            {
+              "label": "Green",
+              "value": "GREEN"
+            },
+            {
+              "label": "Red",
+              "value": "RED"
+            }
+          ],
           "originalIdentifier": "smartcare_subscription",
           "position": 4,
+          "serverSideFiltering": false,
           "sourceData": ""
         },
         "smartcare_subscription_contract_end": {
@@ -267,21 +281,26 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "boxShadow": "none",
           "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
           "dataType": "string",
+          "dateFormat": "DD-MM-YYYY",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_contract_end))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Datepicker",
           "identifier": "smartcare_subscription_contract_end",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Contract End",
           "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "smartcare_subscription_contract_end",
           "position": 3,
-          "sourceData": "2024-12-30T14:00:00Z"
+          "shortcuts": false,
+          "sourceData": "2024-12-30T14:00:00Z",
+          "timePrecision": "minute"
         },
         "smartcare_subscription_contract_start": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
@@ -335,18 +354,32 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_origin))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "smartcare_subscription_origin",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Origin",
+          "label": "Origin/",
           "labelTextSize": "0.875rem",
+          "options": [
+            {
+              "label": "Blue",
+              "value": "BLUE"
+            },
+            {
+              "label": "Green",
+              "value": "GREEN"
+            },
+            {
+              "label": "Red",
+              "value": "RED"
+            }
+          ],
           "originalIdentifier": "smartcare_subscription_origin",
           "position": 5,
+          "serverSideFiltering": false,
           "sourceData": ""
         }
       },
