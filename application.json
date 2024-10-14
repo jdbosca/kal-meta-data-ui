@@ -22,10 +22,6 @@
       "isDefault": true
     },
     {
-      "id": "Asset Attributes",
-      "isDefault": false
-    },
-    {
       "id": "Machine Contract Details",
       "isDefault": false
     }
