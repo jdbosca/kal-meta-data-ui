@@ -257,7 +257,7 @@
           "isVisible": true,
           "label": "Subscription",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"SmartCare Advanced Data\",\n    \"value\": \"SmartCare Advanced Data\"\n  },\n  {\n    \"label\": \"Basic Data\",\n    \"value\": \"Basic Data\"\n  },\n\n  {\n    \"label\": \"SmartCare Partner\",\n    \"value\": \"SmartCare Partner\"\n  },\n  {\n    \"label\": \"SmartCare Embedded\",\n    \"value\": \"SmartCare Embedded\"\n  }\n]",
+          "options": "[\n  {\n    \"label\": \"SmartCare Advanced Data\",\n    \"value\": \"SmartCare Advanced Data\"\n  },\n  {\n    \"label\": \"Basic Data\",\n    \"value\": \"Basic Data\"\n  },\n\n  {\n    \"label\": \"Partner\",\n    \"value\": \"Partner\"\n  },\n  {\n    \"label\": \"Embedded\",\n    \"value\": \"Embedded\"\n  }\n]",
           "originalIdentifier": "smartcare_subscription",
           "position": 4,
           "serverSideFiltering": false,
