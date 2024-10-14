@@ -174,6 +174,18 @@
     },
     {
       "key": "schema.__root_schema__.children.smartcare_subscription_origin.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField2.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField2.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -225,6 +237,48 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
+        "customField1": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "customField1",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "customField1",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Customer Name",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "customField1",
+          "position": 0,
+          "sourceData": ""
+        },
+        "customField2": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "customField2",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "customField2",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Mine",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "customField2",
+          "position": 1,
+          "sourceData": ""
+        },
         "id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "id",
@@ -244,7 +298,7 @@
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
-          "position": 0,
+          "position": 2,
           "sourceData": 7
         },
         "smartcare_subscription": {
@@ -266,7 +320,7 @@
           "labelTextSize": "0.875rem",
           "options": "[\n  {\n    \"label\": \"Basic Data\",\n    \"value\": \"Basic Data\"\n  },\n  {\n    \"label\": \"SmartCare Advanced Data\",\n    \"value\": \"SmartCare Advanced Data\"\n  },\n  {\n    \"label\": \"SmartCare Partner\",\n    \"value\": \"SmartCare Partner\"\n  },\n  {\n    \"label\": \"SmartCare Embedded\",\n    \"value\": \"SmartCare Embedded\"\n  }\n]",
           "originalIdentifier": "smartcare_subscription",
-          "position": 5,
+          "position": 7,
           "serverSideFiltering": false,
           "sourceData": 3
         },
@@ -292,7 +346,7 @@
           "maxDate": "2121-12-31T18:29:00.000Z",
           "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "smartcare_subscription_contract_end",
-          "position": 4,
+          "position": 6,
           "shortcuts": false,
           "sourceData": "2024-12-30T14:00:00Z",
           "timePrecision": "minute"
@@ -319,7 +373,7 @@
           "maxDate": "2121-12-31T18:29:00.000Z",
           "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "smartcare_subscription_contract_start",
-          "position": 3,
+          "position": 5,
           "shortcuts": false,
           "sourceData": "2023-12-31T14:00:00Z",
           "timePrecision": "minute"
@@ -343,7 +397,7 @@
           "label": "Subscription Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription_id",
-          "position": 1,
+          "position": 3,
           "sourceData": "Yancoal-MTW-03-LD-01/24-12/24-5312"
         },
         "smartcare_subscription_id_po_number": {
@@ -365,7 +419,7 @@
           "label": "Po Number",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription_id_po_number",
-          "position": 2,
+          "position": 4,
           "sourceData": 4800265312
         },
         "smartcare_subscription_origin": {
@@ -387,7 +441,7 @@
           "labelTextSize": "0.875rem",
           "options": "[\n  {\n    \"label\": \"Point of Sale\",\n    \"value\": \"Point of Sale\"\n  },\n  {\n    \"label\": \"Mining Solutions \",\n    \"value\": \"Mining Solutions \"\n  },\n  {\n    \"label\": \"KAL Key Accounts\",\n    \"value\": \"KAL Key Accounts\"\n  },\n  {\n    \"label\": \"KAL Services\",\n    \"value\": \"KAL Service\"\n  },\n  {\n    \"label\": \"Global CI Initiative\",\n    \"value\": \"Global CI Initiativee\"\n  },\n  {\n    \"label\": \"MARC Contract\",\n    \"value\": \"MARC Contract\"\n  }\n]",
           "originalIdentifier": "smartcare_subscription_origin",
-          "position": 6,
+          "position": 8,
           "serverSideFiltering": false,
           "sourceData": 2
         }
@@ -422,7 +476,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Add Subscription",
+  "title": "New Contract",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
