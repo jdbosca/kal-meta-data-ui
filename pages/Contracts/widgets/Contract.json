@@ -251,18 +251,32 @@
           "children": {},
           "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
+          "fieldType": "Multiselect",
           "identifier": "smartcare_subscription",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Subscription",
           "labelTextSize": "0.875rem",
+          "options": [
+            {
+              "label": "Blue",
+              "value": "BLUE"
+            },
+            {
+              "label": "Green",
+              "value": "GREEN"
+            },
+            {
+              "label": "Red",
+              "value": "RED"
+            }
+          ],
           "originalIdentifier": "smartcare_subscription",
           "position": 4,
+          "serverSideFiltering": false,
           "sourceData": 3
         },
         "smartcare_subscription_contract_end": {
@@ -349,18 +363,32 @@
           "children": {},
           "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_origin))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
+          "fieldType": "Multiselect",
           "identifier": "smartcare_subscription_origin",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Origin",
           "labelTextSize": "0.875rem",
+          "options": [
+            {
+              "label": "Blue",
+              "value": "BLUE"
+            },
+            {
+              "label": "Green",
+              "value": "GREEN"
+            },
+            {
+              "label": "Red",
+              "value": "RED"
+            }
+          ],
           "originalIdentifier": "smartcare_subscription_origin",
           "position": 5,
+          "serverSideFiltering": false,
           "sourceData": 2
         }
       },
