@@ -1,2 +1,0 @@
-DELETE FROM kal_meta_data."kal_smartcare_technology_asset_attributes_history"
-  WHERE "id" = {{data_table.triggeredRow.id}};
