@@ -273,7 +273,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Mine",
+          "label": "Mine Site",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "customField2",
           "position": 1,
