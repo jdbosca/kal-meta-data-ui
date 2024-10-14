@@ -179,7 +179,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -255,7 +259,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Smartcare Subscription",
+          "label": "Subscription",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription",
           "position": 4,
@@ -331,7 +335,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Smartcare Subscription Id Po Number",
+          "label": "Po Number",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription_id_po_number",
           "position": 1,
@@ -353,7 +357,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Smartcare Subscription Origin",
+          "label": "Origin",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription_origin",
           "position": 5,
@@ -382,7 +386,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"smartcare_subscription_id\")}}",
+  "sourceData": "{{SelectQuery.data}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
