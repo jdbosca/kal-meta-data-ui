@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
-  "autoGenerateForm": true,
+  "autoGenerateForm": false,
   "backgroundColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 72,
+  "bottomRow": 67,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -204,10 +204,10 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
-  "isVisible": "true",
+  "isVisible": true,
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 0,
+  "leftColumn": 37,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
@@ -440,7 +440,7 @@
       }
     }
   },
-  "scrollContents": true,
+  "scrollContents": false,
   "showReset": true,
   "sourceData": "{{InsertQuery.data}}",
   "submitButtonLabel": "Submit",
@@ -451,8 +451,9 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "New Contract",
-  "topRow": 2,
+  "topRow": 0,
   "type": "JSON_FORM_WIDGET",
+  "useSourceData": false,
   "version": 1,
   "widgetId": "o8oiq6vwkk",
   "widgetName": "insert_form"
