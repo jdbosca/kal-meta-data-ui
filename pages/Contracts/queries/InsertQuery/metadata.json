@@ -22,7 +22,7 @@
       "name": "postgres metadata",
       "pluginId": "postgres-plugin"
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "InsertQuery",
     "pageId": "Contracts",
     "userSetOnLoad": false

@@ -1,0 +1,2 @@
+SELECT smartcare_subscription, smartcare_subscription_desc 
+FROM kal_meta_data."kal_smartcare_subscription_attributes";

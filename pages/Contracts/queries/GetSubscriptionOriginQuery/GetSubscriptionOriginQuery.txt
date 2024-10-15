@@ -1,0 +1,2 @@
+SELECT smartcare_subscription_origin, smartcare_subscription_origin_desc
+FROM kal_meta_data."kal_smartcare_subscription_origin_attributes";

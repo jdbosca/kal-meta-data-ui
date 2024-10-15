@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 29,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  GetSubscriptionsQuery.data[0]?.smartcare_subscription ))(Select1.options, Select1.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,12 +14,18 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "optionLabel"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -43,8 +49,10 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 33,
+  "originalTopRow": 26,
   "parentColumnSpace": 7.31640625,
   "parentId": "iww8iqll73",
   "parentRowSpace": 10,
@@ -53,7 +61,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 48,
   "serverSideFiltering": false,
-  "sourceData": "{{\n  get_subscription_type.data.map((subscription) => {\n    return { label: subscription.smartcare_subscription_desc, value: subscription.smartcare_subscription };\n  })\n}}",
+  "sourceData": "{{\n  GetSubscriptionsQuery.data.map((subscription) => {\n    return { label: subscription.smartcare_subscription_desc, value: subscription.smartcare_subscription };\n  })\n}}\n",
   "topRow": 22,
   "type": "SELECT_WIDGET",
   "version": 1,

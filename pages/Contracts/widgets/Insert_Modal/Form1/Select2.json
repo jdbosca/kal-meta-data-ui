@@ -4,13 +4,19 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 37,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  GetSubscriptionOriginQuery.data[0]?.subscription_origin  + '/'))(Select2.options, Select2.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -42,6 +48,8 @@
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "code",
+  "originalBottomRow": 41,
+  "originalTopRow": 34,
   "parentColumnSpace": 7.31640625,
   "parentId": "iww8iqll73",
   "parentRowSpace": 10,
@@ -50,7 +58,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 47,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Blue\",\n    \"code\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "{{\n  GetSubscriptionOriginQuery.data.map((origin) => {\n    return { label: origin.subscription_origin_desc, value: origin.subscription_origin };\n  })\n}}\n",
   "topRow": 30,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_3ec3fe3d-8b1b-4538-bb0d-06bae5be1a38",
-  "id": "Contracts_get_subscription_type",
+  "gitSyncId": "6704ace79f84094942828663_066abd0c-d40c-417f-b9ec-77e9710d5129",
+  "id": "Contracts_GetSubscriptionOriginQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT smartcare_subscription, smartcare_subscription_desc FROM kal_meta_data.\"kal_smartcare_subscription_attributes\"\n",
+      "body": "SELECT smartcare_subscription_origin, smartcare_subscription_origin_desc\nFROM kal_meta_data.\"kal_smartcare_subscription_origin_attributes\";\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -24,7 +24,7 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "get_subscription_type",
+    "name": "GetSubscriptionOriginQuery",
     "pageId": "Contracts",
     "userSetOnLoad": false
   }
