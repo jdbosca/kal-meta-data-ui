@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 37,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ GetSubscriptionOriginQuery.data[0].smartcare_subscription_origin }",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  GetSubscriptionOriginQuery.data[0]?.smartcare_subscription_origin ))(Select2.options, Select2.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
