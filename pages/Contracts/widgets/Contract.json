@@ -333,7 +333,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Po Number",
+          "label": "PO Number",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription_id_po_number",
           "position": 1,

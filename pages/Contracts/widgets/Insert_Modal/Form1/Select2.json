@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 37,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  GetSubscriptionOriginQuery.data[0]?.subscription_origin  + '/'))(Select2.options, Select2.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ GetSubscriptionOriginQuery.data[0].smartcare_subscription_origin }",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,9 +14,6 @@
     },
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -46,8 +43,8 @@
   "mobileRightColumn": 46,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "optionLabel": "label",
+  "optionValue": "value",
   "originalBottomRow": 41,
   "originalTopRow": 34,
   "parentColumnSpace": 7.31640625,
@@ -58,7 +55,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 47,
   "serverSideFiltering": false,
-  "sourceData": "{{\n  GetSubscriptionOriginQuery.data.map((origin) => {\n    return { label: origin.subscription_origin_desc, value: origin.subscription_origin };\n  })\n}}\n",
+  "sourceData": "{{\n  GetSubscriptionOriginQuery.data.map((origin) => {\n    return { label: origin.smartcare_subscription_origin_desc, value: origin.smartcare_subscription_origin };\n  })\n}}\n",
   "topRow": 30,
   "type": "SELECT_WIDGET",
   "version": 1,
