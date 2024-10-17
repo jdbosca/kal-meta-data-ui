@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO kal_meta_data.kal_smartcare_subscription_id_attributes \n(smartcare_subscription_id, smartcare_subscription_id_po_number, smartcare_subscription_contract_start, smartcare_subscription_contract_end, smartcare_subscription, smartcare_subscription_origin)\nVALUES \n('{{InputSmartcareId.text}}', \n {{InputPoNumber.text}}, \n '{{DatePicker1.selectedDate}}', \n '{{DatePicker2.selectedDate}}', \n {{Select1.selectedOptionValue}}, \n {{Select2.selectedOptionValue}});\n",
+      "body": "INSERT INTO kal_meta_data.kal_smartcare_subscription_id_attributes \n(smartcare_subscription_id, smartcare_subscription_id_po_number, smartcare_subscription_contract_start, smartcare_subscription_contract_end, smartcare_subscription, smartcare_subscription_origin)\nVALUES \n('{{InputSmartcareId.text}}', \n {{InputPoNumber.}}, \n '{{DatePicker1.selectedDate}}', \n '{{DatePicker2.selectedDate}}', \n {{Select1.selectedOptionValue}}, \n {{Select2.selectedOptionValue}});\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
