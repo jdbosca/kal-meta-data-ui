@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 26,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  GetSubscriptionsQuery.data[0]?.smartcare_subscription ))(Select1.options, Select1.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -62,7 +62,7 @@
   "rightColumn": 48,
   "serverSideFiltering": false,
   "sourceData": "{{\n  GetSubscriptionsQuery.data.map((subscription) => {\n    return { label: subscription.smartcare_subscription_desc, value: subscription.smartcare_subscription };\n  })\n}}\n",
-  "topRow": 22,
+  "topRow": 19,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "j3v8u428kc",
