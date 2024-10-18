@@ -1,0 +1,8 @@
+UPDATE kal_meta_data.kal_smartcare_subscription_id_attributes
+SET 
+  smartcare_subscription_id_po_number = {{Number(PoNumberInput.text)}},
+  smartcare_subscription_contract_start = '{{ContractStartDate.selectedDate}}',
+  smartcare_subscription_contract_end = '{{ContractEndDate.selectedDate}}',
+  smartcare_subscription = {{SubscriptionDropdown.selectedOptionValue}},
+  smartcare_subscription_origin = {{OriginDropdown.selectedOptionValue}}
+WHERE smartcare_subscription_id = '{{SmartcareIdInput.text}}';

@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "autoGenerateForm": true,
+  "autoGenerateForm": false,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -225,7 +225,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "id",

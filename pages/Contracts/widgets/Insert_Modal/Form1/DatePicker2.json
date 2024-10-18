@@ -21,7 +21,7 @@
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
   "key": "5l3t5711kv",
   "label": "To Date\n",
