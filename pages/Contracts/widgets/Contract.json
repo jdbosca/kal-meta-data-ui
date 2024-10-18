@@ -175,10 +175,10 @@
       "key": "schema.__root_schema__.children.smartcare_subscription.options"
     },
     {
-      "key": "schema.__root_schema__.children.smartcare_subscription.defaultValue"
+      "key": "schema.__root_schema__.children.smartcare_subscription_origin.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.smartcare_subscription_origin.defaultValue"
+      "key": "schema.__root_schema__.children.smartcare_subscription.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -249,7 +249,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (Number(data_table.selectedRow.smartcare_subscription)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (data_table.selectedRow.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "fieldType": "Select",
           "identifier": "smartcare_subscription",
           "isCustomField": false,
