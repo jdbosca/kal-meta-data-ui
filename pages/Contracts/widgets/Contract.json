@@ -249,7 +249,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (data_table.selectedRow.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "fieldType": "Select",
           "identifier": "smartcare_subscription",
           "isCustomField": false,
