@@ -2,7 +2,7 @@ INSERT INTO kal_meta_data.kal_smartcare_subscription_id_attributes
 (smartcare_subscription_id, smartcare_subscription_id_po_number, smartcare_subscription_contract_start, smartcare_subscription_contract_end, smartcare_subscription, smartcare_subscription_origin)
 VALUES 
 ('{{InputSmartcareId.text}}', 
- {{InputPoNumber.}}, 
+ {{Number(InputPoNumber.text)}}, 
  '{{DatePicker1.selectedDate}}', 
  '{{DatePicker2.selectedDate}}', 
  {{Select1.selectedOptionValue}}, 
