@@ -259,7 +259,7 @@
           "isVisible": true,
           "label": "Subscription",
           "labelTextSize": "0.875rem",
-          "options": "{{\n  GetSubscriptionsQuery.data.map((subscription) => {\n    return { label: subscription.smartcare_subscription_desc, value: subscription.smartcare_subscription };\n  })\n}}",
+          "options": "{{FetchSubscriptionDesc.data.map(row => ({\n    label: row.smartcare_subscription_desc,\n    value: row.smartcare_subscription\n}))}}\n",
           "originalIdentifier": "smartcare_subscription",
           "position": 4,
           "serverSideFiltering": false,
