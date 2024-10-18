@@ -176,6 +176,9 @@
     },
     {
       "key": "schema.__root_schema__.children.smartcare_subscription_origin.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription.options"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -256,7 +259,7 @@
           "isVisible": true,
           "label": "Subscription",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"SmartCare Advanced Data\",\n    \"value\": \"SmartCare Advanced Data\"\n  },\n  {\n    \"label\": \"Basic Data\",\n    \"value\": \"Basic Data\"\n  },\n\n  {\n    \"label\": \"Partner\",\n    \"value\": \"Partner\"\n  },\n  {\n    \"label\": \"Embedded\",\n    \"value\": \"Embedded\"\n  }\n]",
+          "options": "{{\n  GetSubscriptionsQuery.data.map((subscription) => {\n    return { label: subscription.smartcare_subscription_desc, value: subscription.smartcare_subscription };\n  })\n}}",
           "originalIdentifier": "smartcare_subscription",
           "position": 4,
           "serverSideFiltering": false,
