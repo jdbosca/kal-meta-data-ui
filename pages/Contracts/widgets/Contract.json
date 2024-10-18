@@ -333,7 +333,7 @@
           "identifier": "smartcare_subscription_id_po_number",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": true,
+          "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "PO Number",
