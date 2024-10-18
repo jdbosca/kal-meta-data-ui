@@ -173,6 +173,9 @@
     },
     {
       "key": "schema.__root_schema__.children.smartcare_subscription_origin.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription_origin.options"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -330,7 +333,7 @@
           "identifier": "smartcare_subscription_id_po_number",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "PO Number",
@@ -356,7 +359,7 @@
           "isVisible": true,
           "label": "Origin",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Point of Sale\",\n    \"value\": \"Point of Sale\"\n  },\n  {\n    \"label\": \"Mining Solutions \",\n    \"value\": \"Mining Solutions \"\n  },\n  {\n    \"label\": \"KAL Key Accounts\",\n    \"value\": \"KAL Key Accounts\"\n  },\n  {\n    \"label\": \"KAL Services\",\n    \"value\": \"KAL Service\"\n  },\n  {\n    \"label\": \"Global CI Initiative\",\n    \"value\": \"Global CI Initiativee\"\n  },\n  {\n    \"label\": \"MARC Contract\",\n    \"value\": \"MARC Contract\"\n  }\n]",
+          "options": " {{\n  GetSubscriptionOriginQuery.data.map((origin) => {\n    return { label: origin.smartcare_subscription_origin_desc, value: origin.smartcare_subscription_origin };\n  })\n}}\n",
           "originalIdentifier": "smartcare_subscription_origin",
           "position": 5,
           "serverSideFiltering": false,
