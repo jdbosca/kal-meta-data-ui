@@ -5,7 +5,7 @@
   "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 84,
+  "bottomRow": 83,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -157,16 +157,10 @@
       "key": "schema.__root_schema__.children.smartcare_subscription_contract_end.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.smartcare_subscription.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.smartcare_subscription.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.smartcare_subscription.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.smartcare_subscription_origin.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.smartcare_subscription_origin.borderRadius"
@@ -179,6 +173,12 @@
     },
     {
       "key": "schema.__root_schema__.children.smartcare_subscription.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription_origin.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -249,7 +249,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (data_table.selectedRow.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (Number(data_table.selectedRow.smartcare_subscription)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "fieldType": "Select",
           "identifier": "smartcare_subscription",
           "isCustomField": false,
@@ -348,7 +348,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_origin))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (Number(data_table.selectedRow.smartcare_subscription_origin)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "fieldType": "Select",
           "identifier": "smartcare_subscription_origin",
           "isCustomField": false,
