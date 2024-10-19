@@ -96,6 +96,7 @@
   "parentColumnSpace": 6.9375,
   "parentId": "268ycz6wfg",
   "parentRowSpace": 10,
+  "primaryColumnId": "ASSET_ID",
   "primaryColumns": {
     "ASSET_ID": {
       "alias": "ASSET_ID",
@@ -180,7 +181,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "MINE REF",
+      "label": "MINE",
       "notation": "standard",
       "originalId": "MINE_REF",
       "sticky": "",
