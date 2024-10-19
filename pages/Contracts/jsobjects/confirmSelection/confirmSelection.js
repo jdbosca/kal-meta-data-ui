@@ -15,7 +15,5 @@ export default {
 		// Set the asset IDs in the input field of the first modal
 		inputAssetIDs.setSelectedOptions(selectedAssetIDs) // Replace 'inputAssetIDs' with your actual input widget name for asset IDs
 
-		// Close the multi-select table modal
-		closeModal(Select_assets);
 	}
 }

@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{confirmSelection.confirmSelection();}}",
+  "onClick": "{{confirmSelection.confirmSelection();\ncloseModal(Select_assets.name);}}",
   "parentId": "268ycz6wfg",
   "placement": "CENTER",
   "recaptchaType": "V3",
