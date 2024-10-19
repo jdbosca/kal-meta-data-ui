@@ -172,13 +172,13 @@
       "key": "schema.__root_schema__.children.smartcare_subscription_origin.options"
     },
     {
-      "key": "schema.__root_schema__.children.smartcare_subscription.options"
-    },
-    {
       "key": "schema.__root_schema__.children.smartcare_subscription_origin.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.smartcare_subscription.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription.options"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -259,7 +259,7 @@
           "isVisible": true,
           "label": "Subscription",
           "labelTextSize": "0.875rem",
-          "options": "{{FetchSubscriptionDesc.data.map(row => ({\n    label: row.smartcare_subscription_desc,\n    value: row.smartcare_subscription\n}))}}\n",
+          "options": "{{FetchSubscriptionDesc.data.map(row => ({\n    label: row.smartcare_subscription_desc,\n    value: row.smartcare_subscription\n}))}}\n\n",
           "originalIdentifier": "smartcare_subscription",
           "position": 4,
           "serverSideFiltering": false,

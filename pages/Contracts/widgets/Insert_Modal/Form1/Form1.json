@@ -4,12 +4,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 62,
+  "bottomRow": 85,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 610,
+      "bottomRow": 810,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -58,7 +58,8 @@
       "key": "boxShadow"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
@@ -73,8 +74,6 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 17,
   "needsErrorInfo": false,
-  "originalBottomRow": 62,
-  "originalTopRow": 1,
   "parentColumnSpace": 17.4375,
   "parentId": "9rhv3ioohq",
   "parentRowSpace": 10,
@@ -83,7 +82,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 60,
   "shouldScrollContents": true,
-  "topRow": 1,
+  "topRow": 4,
   "type": "FORM_WIDGET",
   "widgetId": "s4yp80votz",
   "widgetName": "Form1"
