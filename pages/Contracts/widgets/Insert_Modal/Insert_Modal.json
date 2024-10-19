@@ -46,7 +46,7 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "rightColumn": 41,
-  "shouldScrollContents": true,
+  "shouldScrollContents": false,
   "topRow": 16,
   "type": "MODAL_WIDGET",
   "version": 2,
