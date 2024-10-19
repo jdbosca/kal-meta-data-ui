@@ -1,0 +1,2 @@
+INSERT INTO kal_meta_data."kal_smartcare_contract_asset_attributes" ("asset_id", "smartcare_subscription_id", "smartcare_datasource", "smartcare_influx_retention", "er_engagement", "er_start_date", "er_end_date", "smartcare_adhoc_support_id", "smartcare_adhoc_support_origin")
+  VALUES ('', '', '', '', '', TIMESTAMP WITH TIME ZONE '2019-07-01 06:30:00 CET', TIMESTAMP WITH TIME ZONE '2019-07-01 06:30:00 CET', '', '');
