@@ -158,7 +158,7 @@
   "primaryColumnId": "smartcare_subscription_id",
   "primaryColumns": {
     "customColumn1": {
-      "alias": "MACHINES",
+      "alias": "MACHINE DETAILS",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "1.5rem",
@@ -185,7 +185,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "MACHINES",
+      "label": "MACHINE DETAILS",
       "labelColor": "#FFFFFF",
       "menuColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
