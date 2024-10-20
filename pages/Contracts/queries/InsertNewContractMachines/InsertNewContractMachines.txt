@@ -5,7 +5,7 @@ INSERT INTO kal_meta_data.kal_smartcare_contract_asset_attributes (
 VALUES 
 {{ 
     inputAssetIDs.selectedOptionValues.map(asset_id => 
-        `('${asset_id}', 'test')`
+        `('${asset_id}', ''${}')`
     ).join(', ')
 }}
 ;
