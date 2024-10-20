@@ -480,7 +480,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => (  \n  FetchInfluxRetentionDesc.data.find(row => row.smartcare_influx_retention === currentRow.smartcare_influx_retention)?.smartcare_influx_retention || 'No Retention Data Available' \n))}}",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => (  \n  FetchInfluxRetentionDesc.data.find(row => row.smartcare_influx_retention === currentRow.smartcare_influx_retention)?.smartcare_influx_retention_desc || 'No Retention Data Available' \n))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
