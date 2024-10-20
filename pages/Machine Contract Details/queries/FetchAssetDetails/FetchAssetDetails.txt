@@ -1,3 +1,2 @@
 SELECT *
-FROM kal_meta_data.kal_smartcare_contract_asset_attributes
-WHERE asset_id = COALESCE({{appsmith.store.asset_id}}, asset_id);
+FROM kal_meta_data.kal_smartcare_contract_asset_attributes;
