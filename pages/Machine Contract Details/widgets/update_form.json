@@ -103,9 +103,6 @@
       "key": "schema.__root_schema__.cellBorderRadius"
     },
     {
-      "key": "title"
-    },
-    {
       "key": "resetButtonStyles.buttonColor"
     },
     {
@@ -221,6 +218,9 @@
     },
     {
       "key": "schema.__root_schema__.children.update_date.accentColor"
+    },
+    {
+      "key": "title"
     }
   ],
   "dynamicHeight": "FIXED",
