@@ -547,7 +547,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "asset id: {{data_table.selectedRow.asset_id}}",
+  "title": "{{appsmith.URL.queryParams.asset_id}}",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
