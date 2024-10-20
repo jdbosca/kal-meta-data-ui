@@ -1,0 +1,3 @@
+SELECT *
+FROM kal_meta_data.kal_smartcare_contract_asset_attributes
+WHERE asset_id = '{{appsmith.URL.queryParams.asset_id}}';

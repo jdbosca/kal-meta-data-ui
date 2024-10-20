@@ -72,9 +72,6 @@
   "displayName": "Table",
   "dynamicBindingPathList": [
     {
-      "key": "tableData"
-    },
-    {
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
     {
@@ -121,6 +118,9 @@
     },
     {
       "key": "primaryColumns.update_date.computedValue"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
@@ -579,7 +579,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{SelectQuery.data}}",
+  "tableData": "{{FetchAssetDetails.data}}",
   "textSize": "0.875rem",
   "topRow": 6,
   "totalRecordsCount": 0,
