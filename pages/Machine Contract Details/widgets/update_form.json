@@ -94,9 +94,6 @@
       "key": "sourceData"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "schema.__root_schema__.borderRadius"
     },
     {
@@ -218,9 +215,6 @@
     },
     {
       "key": "schema.__root_schema__.children.update_date.accentColor"
-    },
-    {
-      "key": "title"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -248,7 +242,7 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
-  "isVisible": "{{!!data_table.selectedRow.asset_id}}",
+  "isVisible": "",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
   "leftColumn": 39,
@@ -547,7 +541,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "{{appsmith.store.asset_id}}",
+  "title": "",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,

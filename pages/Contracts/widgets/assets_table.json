@@ -88,7 +88,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 54,
   "needsErrorInfo": false,
-  "onRowSelected": "{{openMachineAssetDetails.onRowDoubleClick();}}",
+  "onRowSelected": "{{onRowSelect.onRowSelect();}}",
   "parentColumnSpace": 18.03125,
   "parentId": "0",
   "parentRowSpace": 10,
