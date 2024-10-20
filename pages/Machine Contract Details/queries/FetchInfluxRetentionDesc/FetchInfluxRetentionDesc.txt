@@ -1,5 +1,0 @@
-SELECT kal_meta_data.smartcare_influx_retention
-FROM kal_meta_data.kal_smartcare_contract_asset_attributes;
-
-SELECT smartcare_datasource, smartcare_datasource_desc
-FROM kal_meta_data.kal_smartcare_datasource_attributes;
