@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 7,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -21,7 +21,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "g5gl43ma63",
-  "leftColumn": 18,
+  "leftColumn": 17,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -36,12 +36,12 @@
   "parentId": "iww8iqll73",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 42,
+  "rightColumn": 41,
   "shouldTruncate": false,
   "text": "New Contract",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 0,
+  "topRow": 3,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
