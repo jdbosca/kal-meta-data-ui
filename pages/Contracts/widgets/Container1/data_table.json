@@ -118,6 +118,9 @@
     },
     {
       "key": "onSort"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -139,6 +142,7 @@
   "leftColumn": 0,
   "multiRowSelection": false,
   "onPageChange": "{{SelectQuery.run()}}",
+  "onRowSelected": "{{getAssetsInContract.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
   "parentColumnSpace": 16.3125,
