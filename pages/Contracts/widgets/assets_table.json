@@ -63,7 +63,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -84,6 +88,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 54,
   "needsErrorInfo": false,
+  "onRowSelected": "{{navigateTo('Machine Contract Details', {\n  \"asset_id\": \"{{assets_table.selectedRow.asset_id}}\"\n}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 18.03125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -95,7 +100,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"asset_id\"]))}}",
+      "computedValue": "{{assets_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"asset_id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -136,5 +141,5 @@
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "bobp7mlfos",
-  "widgetName": "Table1"
+  "widgetName": "assets_table"
 }
