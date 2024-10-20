@@ -24,6 +24,7 @@
   "columnOrder": [
     "id",
     "smartcare_subscription_id",
+    "customColumn1",
     "smartcare_subscription_id_po_number",
     "smartcare_subscription_contract_start",
     "smartcare_subscription_contract_end",
@@ -35,7 +36,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729225988993,
+  "columnUpdatedAt": 1729413825525,
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
@@ -102,6 +103,9 @@
     },
     {
       "key": "primaryColumns.smartcare_subscription_origin.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -121,6 +125,9 @@
     },
     {
       "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -150,6 +157,47 @@
   "parentRowSpace": 10,
   "primaryColumnId": "smartcare_subscription_id",
   "primaryColumns": {
+    "customColumn1": {
+      "alias": "MACHINES",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "1.5rem",
+      "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      "buttonColor": "#22c55e",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "PRIMARY",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "arrow-right",
+      "id": "customColumn1",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "MACHINES",
+      "labelColor": "#FFFFFF",
+      "menuColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "notation": "standard",
+      "onClick": "{{onRowSelect.onRowSelect();}}",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "id": {
       "alias": "id",
       "allowCellWrapping": false,

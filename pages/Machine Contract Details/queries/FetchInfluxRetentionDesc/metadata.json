@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT smartcare_influx_retention\nFROM kal_meta_data.kal_smartcare_contract_asset_attributes;\n",
+      "body": "SELECT kal_meta_data.smartcare_influx_retention\nFROM kal_meta_data.kal_smartcare_contract_asset_attributes;\n\nSELECT smartcare_datasource, smartcare_datasource_desc\nFROM kal_meta_data.kal_smartcare_datasource_attributes;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

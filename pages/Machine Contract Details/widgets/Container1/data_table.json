@@ -40,11 +40,12 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729407153254,
+  "columnUpdatedAt": 1729414044538,
   "columnWidthMap": {
     "smartcare_subscription_id": 327
   },
   "defaultPageSize": 0,
+  "defaultSearchText": "{{appsmith.store.subscription_id}}",
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
   "derivedColumns": {
@@ -124,6 +125,9 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "defaultSearchText"
     }
   ],
   "dynamicPropertyPathList": [
