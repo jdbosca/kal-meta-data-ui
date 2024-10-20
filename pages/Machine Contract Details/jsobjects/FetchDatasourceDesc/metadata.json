@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6704ace79f84094942828663_00093730-6cc0-4fdf-b6f0-807dec89035f",
+  "id": "Machine Contract Details_FetchDatasourceDesc",
+  "unpublishedCollection": {
+    "name": "FetchDatasourceDesc",
+    "pageId": "Machine Contract Details",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

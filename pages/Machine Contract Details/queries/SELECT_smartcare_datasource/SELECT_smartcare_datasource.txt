@@ -1,0 +1,2 @@
+SELECT smartcare_datasource, smartcare_datasource_desc
+FROM kal_meta_data.kal_smartcare_datasource_attributes;

@@ -1,0 +1,2 @@
+SELECT DISTINCT smartcare_influx_retention
+FROM kal_meta_data.kal_smartcare_contract_asset_attributes;
