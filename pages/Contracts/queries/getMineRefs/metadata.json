@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_1384e5ce-af79-4225-8d0a-5da5ed9a236e",
-  "id": "Contracts_getAssets",
+  "gitSyncId": "6704ace79f84094942828663_a97d9167-8ffc-45b7-bb71-165dd832affe",
+  "id": "Contracts_getMineRefs",
   "pluginId": "snowflake-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT ASSET_ID, ASSET_TYPE, MINE_REF\nFROM VIEW_DB.DATA_SCHEMA.ASSETS_V;",
+      "body": "SELECT MINENAME \nFROM VIEW_DB.SURFACE_SCHEMA.ASSET_AND_MINE_NAME;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
@@ -19,7 +19,7 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "getAssets",
+    "name": "getMineRefs",
     "pageId": "Contracts",
     "userSetOnLoad": false
   }

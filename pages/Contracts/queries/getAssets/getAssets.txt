@@ -1,5 +1,2 @@
-SELECT ASSET_ID, ASSET_TYPE, MINE_ASSET_ID
-FROM VIEW_DB.DATA_SCHEMA.ASSETS_V
-WHERE (ASSET_TYPE = {{asset_type_select.selectedOptionValue}} OR {{asset_type_select.selectedOptionValue}} IS NULL)
-AND (MINE_ASSET_ID = {{min.selectedOptionValue}} OR {{minesite_select.selectedOptionValue}} IS NULL);
-
+SELECT ASSET_ID, ASSET_TYPE, MINE_REF
+FROM VIEW_DB.DATA_SCHEMA.ASSETS_V;
