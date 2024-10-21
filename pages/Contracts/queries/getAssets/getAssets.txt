@@ -1,6 +1,5 @@
-SELECT ASSET_ID, ASSET_TYPE, MINE_REF, PARENT_ACCOUNT_ID
+SELECT ASSET_ID, ASSET_TYPE, MINE_ASSET_ID
 FROM VIEW_DB.DATA_SCHEMA.ASSETS_V
-WHERE 
-    ({{asset_type_select.selectedOptionValue ? 'ASSET_TYPE = ' + asset_type_select.selectedOptionValue : '1=1'}}) AND
-    ({{minesite_select.selectedOptionValue ? 'MINE_REF = ' + minesite_select.selectedOptionValue : '1=1'}}) AND
-    ({{parent_account_select.selectedOptionValue ? 'PARENT_ACCOUNT_ID = ' + parent_account_select.selectedOptionValue : '1=1'}});
+WHERE (ASSET_TYPE = {{asset_type_select.selectedOptionValue}} OR {{asset_type_select.selectedOptionValue}} IS NULL)
+AND (MINE_ASSET_ID = {{min.selectedOptionValue}} OR {{minesite_select.selectedOptionValue}} IS NULL);
+
