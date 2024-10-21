@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO kal_meta_data.kal_smartcare_contract_asset_attributes (\n    asset_id,\n    smartcare_subscription_id\n)\nVALUES \n{{ \n    inputAssetIDs.selectedOptionValues.map(asset_id => \n        `('${asset_id}', ''${}')`\n    ).join(', ')\n}}\n;\n",
+      "body": "INSERT INTO kal_meta_data.kal_smartcare_contract_asset_attributes (\n    asset_id,\n    smartcare_subscription_id\n)\nVALUES\n    {{inputAssetIDs.selectedOptionValues.map(asset_id => `('${asset_id}', '${InputSmartcareId.text}')`).join(',') }};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
