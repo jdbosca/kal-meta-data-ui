@@ -37,6 +37,13 @@
     "task": 245
   },
   "columnUpdatedAt": 1729413825525,
+  "columnWidthMap": {
+    "customColumn1": 117,
+    "smartcare_subscription_contract_end": 113,
+    "smartcare_subscription_contract_start": 131,
+    "smartcare_subscription_id": 191,
+    "smartcare_subscription_id_po_number": 130
+  },
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
@@ -158,7 +165,7 @@
   "primaryColumnId": "smartcare_subscription_id",
   "primaryColumns": {
     "customColumn1": {
-      "alias": "MACHINE DETAILS",
+      "alias": "MACHINES",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "1.5rem",
@@ -185,7 +192,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "MACHINE DETAILS",
+      "label": "MACHINES",
       "labelColor": "#FFFFFF",
       "menuColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
@@ -358,7 +365,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "SUBSCRIPTION ID",
+      "label": "SUBSCRIPTION",
       "notation": "standard",
       "originalId": "smartcare_subscription_id",
       "sticky": "",
