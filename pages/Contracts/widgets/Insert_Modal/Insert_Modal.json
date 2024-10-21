@@ -7,7 +7,7 @@
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 810,
+      "bottomRow": 1880,
       "boxShadow": "none",
       "canExtend": true,
       "detachFromLayout": true,
@@ -18,7 +18,7 @@
       "isVisible": "true",
       "labelTextSize": "0.875rem",
       "leftColumn": 0,
-      "minHeight": 812,
+      "minHeight": 1612,
       "parentColumnSpace": 1,
       "parentId": "vmorzie6eq",
       "parentRowSpace": 1,
@@ -35,7 +35,7 @@
   "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
-  "height": 812,
+  "height": 1612,
   "isLoading": false,
   "labelTextSize": "0.875rem",
   "leftColumn": 17,
@@ -52,5 +52,5 @@
   "version": 2,
   "widgetId": "vmorzie6eq",
   "widgetName": "Insert_Modal",
-  "width": 548
+  "width": 792
 }

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT ASSET_ID, ASSET_TYPE, MINE_REF FROM VIEW_DB.DATA_SCHEMA.ASSETS_V;",
+      "body": "SELECT ASSET_ID, ASSET_TYPE, MINE_REF, PARENT_ACCOUNT_ID\nFROM VIEW_DB.DATA_SCHEMA.ASSETS_V\nWHERE \n    ({{asset_type_select.selectedOptionValue ? 'ASSET_TYPE = ' + asset_type_select.selectedOptionValue : '1=1'}}) AND\n    ({{minesite_select.selectedOptionValue ? 'MINE_REF = ' + minesite_select.selectedOptionValue : '1=1'}}) AND\n    ({{parent_account_select.selectedOptionValue ? 'PARENT_ACCOUNT_ID = ' + parent_account_select.selectedOptionValue : '1=1'}});\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
@@ -17,7 +17,11 @@
       "name": "KAL_SF_MACHINE_METADATA",
       "pluginId": "snowflake-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": true,
     "name": "getAssets",
     "pageId": "Contracts",
