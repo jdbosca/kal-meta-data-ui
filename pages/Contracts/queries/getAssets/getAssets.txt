@@ -1,2 +1,7 @@
 SELECT ASSET_ID, ASSET_TYPE, MINE_REF
-FROM VIEW_DB.DATA_SCHEMA.ASSETS_V;
+FROM VIEW_DB.DATA_SCHEMA.ASSETS_V
+WHERE 
+    ({{MultiSelect1.selectedOptionValues.length}} = 0 OR ASSET_TYPE IN ({{MultiSelect1.selectedOptionValues.map(value => `'${value}'`).join(',')}}))
+    AND 
+    ({{mine_select.selectedOptionValue ? 1 : 0}} = 0 OR MINE_REF = '{{mine_select.selectedOptionValue}}');
+
