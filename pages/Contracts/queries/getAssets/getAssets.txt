@@ -3,5 +3,4 @@ FROM VIEW_DB.DATA_SCHEMA.ASSETS_V
 WHERE 
     ASSET_TYPE IN ({{MultiSelect1.selectedOptionValues.map(value => `'${value}'`).join(', ')}})
     AND 
-    MINE_REF = '{{mine_select.selectedOptionValue}}';
-/
+    MINE_MACHINE_REF = '{{mine_select.selectedOptionValue}}';

@@ -18,7 +18,7 @@
       "pluginId": "snowflake-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "getCustomers",
     "pageId": "Contracts",
     "userSetOnLoad": false

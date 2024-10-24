@@ -55,7 +55,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 43,
   "serverSideFiltering": false,
-  "sourceData": "{{getMineRefs.data.map( (obj) =>{ return  {'label': obj.MINE_REF, 'value': obj.MINE_REF } })}}",
+  "sourceData": "{{getMineRefs.data.map( (obj) =>{ return  {'label': obj.MINE_MACHINE_REF, 'value': obj.MINE_MACHINE_REF } })}}",
   "topRow": 5,
   "type": "SELECT_WIDGET",
   "version": 1,
