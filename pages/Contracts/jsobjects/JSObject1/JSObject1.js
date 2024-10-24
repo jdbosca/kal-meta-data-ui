@@ -3,7 +3,9 @@ export default {
 
 		// Sample values for mine_ref, asset types, and dates
 		const mineRef = mine_select.selectedOptionValue; // Assuming a mine_ref dropdown
-		const assetTypes = MultiSelect1.selectedOptionValues.join('-'); // Joins all selected asset types with a hyphen
+		const assetTypes = MultiSelect1.selectedOptionValues.length > 0 
+			? MultiSelect1.selectedOptionValues.join('-') 
+			: ""; // Set assetTypes to an empty string if no values are selected
 		const fromDate = new Date(DatePicker1.selectedDate); // Convert to Date object for formatting
 		const toDate = new Date(DatePicker2.selectedDate);   // Convert to Date object for formatting
 
