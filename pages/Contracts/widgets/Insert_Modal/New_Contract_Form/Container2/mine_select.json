@@ -43,7 +43,7 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "optionLabel": "name",
+  "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 8,
   "originalTopRow": 4,

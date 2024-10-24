@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT MINENAME \nFROM VIEW_DB.SURFACE_SCHEMA.ASSET_AND_MINE_NAME;\n",
+      "body": "SELECT DISTINCT MINENAME \nFROM VIEW_DB.SURFACE_SCHEMA.ASSET_AND_MINE_NAME;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
