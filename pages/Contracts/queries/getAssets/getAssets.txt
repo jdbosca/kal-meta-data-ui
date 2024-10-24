@@ -4,3 +4,4 @@ WHERE
     ASSET_TYPE IN ({{MultiSelect1.selectedOptionValues.map(value => `'${value}'`).join(', ')}})
     AND 
     MINE_REF = '{{mine_select.selectedOptionValue}}';
+/
