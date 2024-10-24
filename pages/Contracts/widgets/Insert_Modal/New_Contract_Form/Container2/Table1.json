@@ -35,7 +35,7 @@
     "ASSET_TYPE",
     "MINE_REF"
   ],
-  "columnUpdatedAt": 1729554425520,
+  "columnUpdatedAt": 1729745592614,
   "columnWidthMap": {},
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
@@ -197,6 +197,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
+  "showInlineEditingOptionDropdown": true,
   "tableData": "{{getAssets.data}}",
   "textSize": "0.875rem",
   "topRow": 12,
