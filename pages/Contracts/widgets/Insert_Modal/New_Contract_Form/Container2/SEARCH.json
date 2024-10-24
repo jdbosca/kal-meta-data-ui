@@ -41,10 +41,10 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 60,
-  "text": "Submit",
+  "text": "Search",
   "topRow": 7,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "b69pqn6zzl",
-  "widgetName": "Button7"
+  "widgetName": "SEARCH"
 }
