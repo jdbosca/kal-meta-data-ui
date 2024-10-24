@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT ASSET_ID, ASSET_TYPE, MINE_REF\nFROM VIEW_DB.DATA_SCHEMA.ASSETS_V\nWHERE \n    ASSET_TYPE = ANY (ARRAY[{{MultiSelect1.selectedOptionValues.map(value => `'${value}'`).join(', ')}}]::text[]);\n\n",
+      "body": "SELECT ASSET_ID, ASSET_TYPE, MINE_REF\nFROM VIEW_DB.DATA_SCHEMA.ASSETS_V\nWHERE \n    ASSET_TYPE IN ({{MultiSelect1.selectedOptionValues.map(value => `'${value}'`).join(', ')}})\n    AND \n    MINE_REF = '{{mine_select.selectedOptionValue}}';\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000

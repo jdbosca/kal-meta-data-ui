@@ -1,5 +1,6 @@
 SELECT ASSET_ID, ASSET_TYPE, MINE_REF
 FROM VIEW_DB.DATA_SCHEMA.ASSETS_V
 WHERE 
-    ASSET_TYPE = ANY (ARRAY[{{MultiSelect1.selectedOptionValues.map(value => `'${value}'`).join(', ')}}]::text[]);
-
+    ASSET_TYPE IN ({{MultiSelect1.selectedOptionValues.map(value => `'${value}'`).join(', ')}})
+    AND 
+    MINE_REF = '{{mine_select.selectedOptionValue}}';
