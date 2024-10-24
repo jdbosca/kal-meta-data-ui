@@ -72,7 +72,7 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
   "inlineEditingSaveOption": "ROW_LEVEL",
@@ -80,7 +80,7 @@
   "isSortable": true,
   "isVisible": true,
   "isVisibleDownload": false,
-  "isVisibleFilters": true,
+  "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
   "key": "ieh0o5redn",

@@ -31,7 +31,7 @@
   "mobileRightColumn": 60,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onClick": "{{Query5.run()}}",
+  "onClick": "{{getAssets.run()}}",
   "parentColumnSpace": 10.106201171875,
   "parentId": "45w2wtv2ls",
   "parentRowSpace": 10,
