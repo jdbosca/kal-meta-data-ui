@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT ASSET_TYPE \nFROM VIEW_DB.DATA_SCHEMA.ASSETS_V \nWHERE MINE_MACHINE_REF = {{mine_select}};  -- Assuming mine_select returns a single value\n",
+      "body": "SELECT DISTINCT ASSET_TYPE \nFROM VIEW_DB.DATA_SCHEMA.ASSETS_V \nWHERE MINE_REF = '{{mine_select.selectedOptionValue}}'; \n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000

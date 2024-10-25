@@ -57,7 +57,7 @@
   "placeholderText": "Select option(s)",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 42,
+  "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "{{getAssetTypes.data}}",
   "topRow": 4,
