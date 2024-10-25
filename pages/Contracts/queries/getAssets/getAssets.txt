@@ -1,6 +1,7 @@
-SELECT ASSET_ID, ASSET_TYPE, MINE_REF
+SELECT ASSET_ID, ASSET_TYPE, MINE_MACHINE_REF
 FROM VIEW_DB.DATA_SCHEMA.ASSETS_V
 WHERE 
-    ASSET_TYPE IN ({{MultiSelect1.selectedOptionValues.map(value => `'${value}'`).join(', ')}})
+    ({{MultiSelect1.selectedOptionValues.length}} = 0 OR (ASSET_TYPE IN ({{MultiSelect1.selectedOptionValues.join(',')}})))
     AND 
-    MINE_MACHINE_REF = '{{mine_select.selectedOptionValue}}';
+    ({{mine_select.selectedOptionValue}} IS NULL OR MINE_MACHINE_REF = {{mine_select.selectedOptionValue}}');
+

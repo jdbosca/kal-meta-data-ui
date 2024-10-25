@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_fbadac49-12b2-45c8-9880-d3ab478e4919",
-  "id": "Contracts_getAssetTypes",
+  "gitSyncId": "6704ace79f84094942828663_f46281c0-b7a1-48bc-99f9-b01b6517df5c",
+  "id": "Contracts_Query3",
   "pluginId": "snowflake-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT ASSET_TYPE \nFROM VIEW_DB.DATA_SCHEMA.ASSETS_V \nWHERE MINE_MACHINE_REF = {{mine_select}};  -- Assuming mine_select returns a single value\n",
+      "body": "SELECT * FROM KAL_META_DATA.KAL_SMARTCARE_COMMON_ASSET_ATTRIBUTES_HISTORY LIMIT 10;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
@@ -17,13 +17,8 @@
       "name": "KAL_SF_MACHINE_METADATA",
       "pluginId": "snowflake-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "executeOnLoad": true,
-    "name": "getAssetTypes",
+    "executeOnLoad": false,
+    "name": "Query3",
     "pageId": "Contracts",
     "userSetOnLoad": false
   }
