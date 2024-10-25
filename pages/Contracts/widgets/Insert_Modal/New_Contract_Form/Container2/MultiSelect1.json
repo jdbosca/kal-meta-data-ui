@@ -26,7 +26,11 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -47,6 +51,7 @@
   "mobileRightColumn": 24,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onOptionChange": "{{getAssets.run()}}",
   "optionLabel": "ASSET_TYPE",
   "optionValue": "ASSET_TYPE",
   "originalBottomRow": 8,

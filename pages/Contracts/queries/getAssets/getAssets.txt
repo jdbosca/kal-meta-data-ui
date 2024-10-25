@@ -3,7 +3,10 @@ FROM VIEW_DB.DATA_SCHEMA.ASSETS_V
 WHERE 
     ({{MultiSelect1.selectedOptionValues.length}} = 0 OR ASSET_TYPE IN ({{MultiSelect1.selectedOptionValues.map(value => `'${value}'`).join(',')}}))
     AND 
-    ({{mine_select.selectedOptionValue}} IS NULL OR MINE_REF = '{{mine_select.selectedOptionValue}}');
+    MINE_REF = '{{mine_select.selectedOptionValue}}';
+
+
+
 
 
 
