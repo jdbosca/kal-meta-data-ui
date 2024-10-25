@@ -135,7 +135,7 @@
   "searchKey": "",
   "tableData": "{{getAssetsInContract.data}}",
   "textSize": "0.875rem",
-  "topRow": 54,
+  "topRow": 60,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

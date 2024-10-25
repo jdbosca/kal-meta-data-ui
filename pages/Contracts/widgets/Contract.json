@@ -5,7 +5,7 @@
   "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 54,
+  "bottomRow": 60,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -169,20 +169,30 @@
       "key": "schema.__root_schema__.children.smartcare_subscription_origin.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.smartcare_subscription_origin.options"
-    },
-    {
       "key": "schema.__root_schema__.children.smartcare_subscription_origin.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.smartcare_subscription.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.smartcare_subscription.options"
+      "key": "schema.__root_schema__.children.smartcare_subscription_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription_id.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription_contract_end.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription_contract_start.defaultValue"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -215,9 +225,9 @@
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
       "boxShadow": "none",
-      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
         "id": {
@@ -240,7 +250,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
           "position": 0,
-          "sourceData": 10
+          "sourceData": 35
         },
         "smartcare_subscription": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
@@ -248,22 +258,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (data_table.selectedRow.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Select",
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "smartcare_subscription",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Subscription",
           "labelTextSize": "0.875rem",
-          "options": "{{FetchSubscriptionDesc.data.map(row => ({\n    label: row.smartcare_subscription_desc,\n    value: row.smartcare_subscription\n}))}}\n\n",
           "originalIdentifier": "smartcare_subscription",
-          "position": 4,
-          "serverSideFiltering": false,
-          "sourceData": 3
+          "position": 5,
+          "sourceData": "Basic Data"
         },
         "smartcare_subscription_contract_end": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
@@ -287,9 +296,9 @@
           "maxDate": "2121-12-31T18:29:00.000Z",
           "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "smartcare_subscription_contract_end",
-          "position": 3,
+          "position": 4,
           "shortcuts": false,
-          "sourceData": "2024-12-30T14:00:00Z",
+          "sourceData": "2024-10-14T22:24:07.001Z",
           "timePrecision": "minute"
         },
         "smartcare_subscription_contract_start": {
@@ -314,10 +323,32 @@
           "maxDate": "2121-12-31T18:29:00.000Z",
           "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "smartcare_subscription_contract_start",
-          "position": 2,
+          "position": 3,
           "shortcuts": false,
-          "sourceData": "2023-12-31T14:00:00Z",
+          "sourceData": "2024-10-14T22:24:07.001Z",
           "timePrecision": "minute"
+        },
+        "smartcare_subscription_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "accessor": "smartcare_subscription_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_id))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "smartcare_subscription_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Subscription Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "smartcare_subscription_id",
+          "position": 1,
+          "sourceData": ""
         },
         "smartcare_subscription_id_po_number": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
@@ -338,8 +369,8 @@
           "label": "PO Number",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "smartcare_subscription_id_po_number",
-          "position": 1,
-          "sourceData": 4700062839
+          "position": 2,
+          "sourceData": 0
         },
         "smartcare_subscription_origin": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
@@ -347,22 +378,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (Number(data_table.selectedRow.smartcare_subscription_origin)))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Select",
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_origin))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "smartcare_subscription_origin",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Origin",
+          "label": "Subscription Origin",
           "labelTextSize": "0.875rem",
-          "options": " {{\n  GetSubscriptionOriginQuery.data.map((origin) => {\n    return { label: origin.smartcare_subscription_origin_desc, value: origin.smartcare_subscription_origin };\n  })\n}}\n",
           "originalIdentifier": "smartcare_subscription_origin",
-          "position": 5,
-          "serverSideFiltering": false,
-          "sourceData": 2
+          "position": 6,
+          "sourceData": "Point of Sale"
         }
       },
       "dataType": "object",
@@ -378,10 +408,13 @@
       "originalIdentifier": "__root_schema__",
       "position": -1,
       "sourceData": {
-        "col1": 5,
-        "col2": "skill B",
-        "col3": 9,
-        "col4": true
+        "id": 35,
+        "smartcare_subscription": "Basic Data",
+        "smartcare_subscription_contract_end": "2024-10-14T22:24:07.001Z",
+        "smartcare_subscription_contract_start": "2024-10-14T22:24:07.001Z",
+        "smartcare_subscription_id": "",
+        "smartcare_subscription_id_po_number": 0,
+        "smartcare_subscription_origin": "Point of Sale"
       }
     }
   },
