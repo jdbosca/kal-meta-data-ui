@@ -33,7 +33,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{InsertNewContract.run();\nInsertNewContractMachines.run()}}",
+  "onClick": "{{InsertNewContract.run();\nInsertNewContractMachines.run();\ncloseModal(Insert_Modal.name);}}",
   "originalBottomRow": 98,
   "originalTopRow": 93,
   "parentId": "iww8iqll73",

@@ -47,7 +47,7 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "onOptionChange": "{{getAssetTypes.run()}}",
+  "onOptionChange": "{{getAssetTypes.run();\nGetAssetsQuery.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 8,
