@@ -365,7 +365,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "SUBSCRIPTION",
+      "label": "SUBSCRIPTION ID",
       "notation": "standard",
       "originalId": "smartcare_subscription_id",
       "sticky": "",
