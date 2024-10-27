@@ -185,6 +185,9 @@
     },
     {
       "key": "schema.__root_schema__.children.smartcare_subscription.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.smartcare_subscription_origin.options"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -265,7 +268,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (`value=\"` + Contract.sourceData.smartcare_subscription + `\"`))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (Contract.sourceData.smartcare_subscription))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
           "fieldType": "Select",
           "identifier": "smartcare_subscription",
           "isCustomField": false,
@@ -386,19 +389,20 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_origin))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smartcare_subscription_origin_desc))(Contract.sourceData, Contract.formData, Contract.fieldState)}}",
+          "fieldType": "Select",
           "identifier": "smartcare_subscription_origin",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Smartcare Subscription Origin",
           "labelTextSize": "0.875rem",
+          "options": "{{ FetchSubscriptionOrigin.data.map(item => ({\n    label: item.smartcare_subscription_origin_desc, // This is what the user will see\n    value: item.smartcare_subscription_origin       // This is the value that will be submitted\n})) }}\n",
           "originalIdentifier": "smartcare_subscription_origin",
           "position": 6,
+          "serverSideFiltering": false,
           "sourceData": 2
         }
       },
