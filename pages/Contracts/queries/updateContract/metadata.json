@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_760f5b55-08eb-41cd-9156-b36b4a34644b",
-  "id": "Contracts_deleteContract",
+  "gitSyncId": "6704ace79f84094942828663_2c5ffa99-97f2-4d9f-bbb3-0d92debe920e",
+  "id": "Contracts_updateContract",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM kal_meta_data.kal_smartcare_subscription_id_attributes\nWHERE id = {{data_table.selectedRow.id}};\n",
+      "body": "UPDATE kal_meta_data.kal_smartcare_contract_asset_attributes\nSET \n    smartcare_subscription_id = {{contract_modal.subscription_id}},\n    asset_id = {{contract_modal.asset_id}},\n    some_other_field = {{contract_modal.some_other_field}},\n    another_field = {{contract_modal.another_field}}\nWHERE id = {{contract_modal.id}};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "deleteContract",
+    "name": "updateContract",
     "pageId": "Contracts",
     "userSetOnLoad": false
   }

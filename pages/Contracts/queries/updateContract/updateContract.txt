@@ -1,0 +1,7 @@
+UPDATE kal_meta_data.kal_smartcare_contract_asset_attributes
+SET 
+    smartcare_subscription_id = {{contract_modal.subscription_id}},
+    asset_id = {{contract_modal.asset_id}},
+    some_other_field = {{contract_modal.some_other_field}},
+    another_field = {{contract_modal.another_field}}
+WHERE id = {{contract_modal.id}};
