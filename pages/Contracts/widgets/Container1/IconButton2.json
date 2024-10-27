@@ -1,4 +1,5 @@
 {
+  "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 10,
   "boxShadow": "none",
@@ -17,20 +18,28 @@
       "key": "onClick"
     }
   ],
-  "iconName": "refresh",
+  "iconName": "delete",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "true",
-  "labelTextSize": "0.875rem",
-  "leftColumn": 58,
-  "onClick": "{{SelectQuery.run()}}",
-  "parentColumnSpace": 12.0703125,
+  "isVisible": true,
+  "key": "2zqwtlaw52",
+  "leftColumn": 48,
+  "minWidth": 50,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 48,
+  "mobileRightColumn": 52,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(Modal1.name);}}",
+  "parentColumnSpace": 17.60693359375,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "rightColumn": 62,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 52,
   "topRow": 6,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "xp5u9a9nzq",
-  "widgetName": "refresh_btn"
+  "widgetId": "f3md0btw21",
+  "widgetName": "IconButton2"
 }
