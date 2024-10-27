@@ -1,2 +1,0 @@
-DELETE FROM kal_meta_data.kal_smartcare_subscription_id_attributes
-WHERE id = {{data_table.selectedRow.id}};

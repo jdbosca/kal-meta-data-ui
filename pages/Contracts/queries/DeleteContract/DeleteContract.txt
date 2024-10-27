@@ -1,0 +1,4 @@
+DELETE FROM kal_meta_data.kal_smartcare_subscription_id_attributes
+WHERE id = {{data_table.selectedRow.id}};
+DELETE FROM kal_meta_data.kal_smartcare_contract_asset_attributes
+WHERE kal_meta_data.kal_smartcare_contract_asset_attributes.smartcare_subscription_id = {{data_table.selectedRow.smartcare_subscription_id}};

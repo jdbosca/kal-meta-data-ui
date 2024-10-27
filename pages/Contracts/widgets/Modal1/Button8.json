@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{deleteContract.run().then(() => {\n  closeModal('');\n}).catch(() => {\n  showModal();\n  closeModal('');\n});}}",
+  "onClick": "{{DeleteContract.run().then(() => {\n  closeModal('');\n}).catch(() => {\n  showModal();\n  closeModal('');\n});}}",
   "parentId": "vsezsi3wu1",
   "placement": "CENTER",
   "recaptchaType": "V3",
