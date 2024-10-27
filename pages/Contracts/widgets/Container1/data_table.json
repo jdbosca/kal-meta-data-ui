@@ -156,7 +156,7 @@
   "leftColumn": 0,
   "multiRowSelection": false,
   "onPageChange": "{{SelectQuery.run()}}",
-  "onRowSelected": "{{getAssetsInContract.run()}}",
+  "onRowSelected": "{{SelectContractByID.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
   "parentColumnSpace": 16.3125,

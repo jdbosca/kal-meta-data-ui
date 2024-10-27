@@ -1,4 +1,3 @@
-
 UPDATE kal_meta_data."kal_smartcare_subscription_id_attributes" SET
     "smartcare_subscription_id_po_number" = '{{Contract.fieldState.smartcare_subscription_id_po_number.isVisible ? Contract.formData.smartcare_subscription_id_po_number : Contract.sourceData.smartcare_subscription_id_po_number}}',
 		"smartcare_subscription_contract_start" = '{{Contract.fieldState.smartcare_subscription_contract_start.isVisible ? update_form.formData.smartcare_subscription_contract_start : update_form.sourceData.smartcare_subscription_contract_start}}',

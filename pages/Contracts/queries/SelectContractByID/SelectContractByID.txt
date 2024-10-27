@@ -1,0 +1,3 @@
+SELECT * 
+FROM kal_meta_data.kal_smartcare_subscription_id_attributes
+WHERE smartcare_subscription_id = {{data_table.selectedRow.smartcare_subscription_id}};

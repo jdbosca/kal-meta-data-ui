@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE kal_meta_data.kal_smartcare_contract_asset_attributes\nSET \n    smartcare_subscription_id = {{contract_modal.subscription_id}},\n    asset_id = {{contract_modal.asset_id}},\n    some_other_field = {{contract_modal.some_other_field}},\n    another_field = {{contract_modal.another_field}}\nWHERE id = {{contract_modal.id}};\n",
+      "body": "UPDATE kal_meta_data.\"kal_smartcare_subscription_id_attributes\"\nSET \n    smartcare_subscription_id = '{{Contract.sourceData.subscription_id}}',\n    smartcare_subscription_id_po_number = '{{Contract.sourceData.smartcare_subscription_id_po_number}}',\n    smartcare_subscription_contract_start = '{{Contract.sourceData.smartcare_subscription_contract_start}}',\n    smartcare_subscription_contract_end = '{{Contract.sourceData.smartcare_subscription_contract_end}}',\n    smartcare_subscription = '{{Contract.sourceData.smartcare_subscription}}',\n    smartcare_subscription_origin = '{{Contract.sourceData.smartcare_subscription_origin}}'\nWHERE id = '{{Contract.sourceData.id}}';\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
