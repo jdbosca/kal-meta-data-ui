@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * \nFROM kal_meta_data.kal_smartcare_subscription_id_attributes\nWHERE smartcare_subscription_id = {{data_table.selectedRow.smartcare_subscription_id}};\n",
+      "body": "SELECT * \nFROM kal_meta_data.kal_smartcare_subscription_id_attributes\nWHERE id = {{data_table.selectedRow.id}};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
