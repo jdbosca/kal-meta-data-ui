@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE kal_meta_data.kal_smartcare_subscription_id_attributes\nSET \n    smartcare_subscription_id = '{{Contract.formData.smartcare_subscription_id}}',\n    smartcare_subscription_id_po_number = '{{Contract.formData.smartcare_subscription_id_po_number}}',\n    smartcare_subscription_contract_start = '{{Contract.formData.smartcare_subscription_contract_start}}',\n    smartcare_subscription_contract_end = '{{Contract.formData.smartcare_subscription_contract_end}}',\n    smartcare_subscription = '{{Contract.formData.smartcare_subscription}}',\n    smartcare_subscription_origin = '{{Contract.formData.smartcare_subscription_origin}}'\nWHERE id = '{{Contract.sourceData.id}}';\n\n",
+      "body": "UPDATE kal_meta_data.kal_smartcare_subscription_id_attributes\nSET \n    smartcare_subscription_id = '{{Contract.formData.smartcare_subscription_id}}',\n    smartcare_subscription_id_po_number = '{{Contract.formData.smartcare_subscription_id_po_number}}',\n    smartcare_subscription_contract_start ='{{Contract.formData.smartcare_subscription_contract_start}}',\n    smartcare_subscription_contract_end = '{{Contract.formData.smartcare_subscription_contract_end}}',\n    smartcare_subscription = '{{Contract.formData.smartcare_subscription}}',\n    smartcare_subscription_origin = '{{Contract.formData.smartcare_subscription_origin}}'\nWHERE id = '{{Contract.sourceData.id}}';\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
