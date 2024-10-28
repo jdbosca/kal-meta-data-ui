@@ -1,0 +1,3 @@
+SELECT DISTINCT ASSET_TYPE 
+FROM VIEW_DB.DATA_SCHEMA.ASSETS_V 
+WHERE ASSET_ID = '{{mine_select.selectedOptionValue}}'; 

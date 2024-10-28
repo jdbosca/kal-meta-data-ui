@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6704ace79f84094942828663_63f7b606-3ec0-4ff6-ac2e-eebbc8ac4139",
-  "id": "Contracts_GetAssetsQuery",
+  "gitSyncId": "6704ace79f84094942828663_6cddbff2-7735-42d8-9211-4947bd6de563",
+  "id": "Contracts_GetAssetTypeFromAssetID",
   "pluginId": "snowflake-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT ASSET_ID, ASSET_TYPE \nFROM VIEW_DB.DATA_SCHEMA.ASSETS_V; \n",
+      "body": "SELECT DISTINCT ASSET_TYPE \nFROM VIEW_DB.DATA_SCHEMA.ASSETS_V \nWHERE ASSET_ID = '{{mine_select.selectedOptionValue}}'; \n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
@@ -17,9 +17,13 @@
       "name": "KAL_SF_MACHINE_METADATA",
       "pluginId": "snowflake-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "GetAssetsQuery",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": false,
+    "name": "GetAssetTypeFromAssetID",
     "pageId": "Contracts",
     "userSetOnLoad": false
   }
