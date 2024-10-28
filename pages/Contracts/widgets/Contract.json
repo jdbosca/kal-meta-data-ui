@@ -218,7 +218,7 @@
   "leftColumn": 39,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{UpdateContract.run().then(() => {});}}",
+  "onSubmit": "{{UpdateContractByID.run()}}",
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,

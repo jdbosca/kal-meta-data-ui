@@ -2,9 +2,10 @@ UPDATE kal_meta_data.kal_smartcare_subscription_id_attributes
 SET 
     smartcare_subscription_id = '{{Contract.formData.smartcare_subscription_id}}',
     smartcare_subscription_id_po_number = '{{Contract.formData.smartcare_subscription_id_po_number}}',
-    smartcare_subscription_contract_start ='{{Contract.formData.smartcare_subscription_contract_start}}',
+    smartcare_subscription_contract_start = '{{Contract.formData.smartcare_subscription_contract_start}}',
     smartcare_subscription_contract_end = '{{Contract.formData.smartcare_subscription_contract_end}}',
     smartcare_subscription = '{{Contract.formData.smartcare_subscription}}',
     smartcare_subscription_origin = '{{Contract.formData.smartcare_subscription_origin}}'
-WHERE id = '{{Contract.sourceData.id}}';
+WHERE id = {{data_table.selectedRow.id}}; 
+
 
