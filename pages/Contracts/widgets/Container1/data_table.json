@@ -113,11 +113,59 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuColor"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_id.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_id_po_number.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_contract_start.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_contract_end.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_origin.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_id.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_id_po_number.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_contract_start.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_contract_end.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.smartcare_subscription_origin.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -145,7 +193,7 @@
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": true,
-  "isVisible": "true",
+  "isVisible": "{{ toggleNameColumn.isSelected }}\n",
   "isVisibleDownload": false,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
@@ -187,7 +235,7 @@
       "id": "customColumn1",
       "index": 7,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( SwitchGroup1.selectedValues.includes(\"MACHINES\")))}}",
       "isDerived": true,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -258,7 +306,7 @@
       "id": "smartcare_subscription",
       "index": 5,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( SwitchGroup1.selectedValues.includes(\"TYPE\")))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -292,7 +340,7 @@
       "id": "smartcare_subscription_contract_end",
       "index": 4,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( SwitchGroup1.selectedValues.includes(\"END DATE\")))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -326,7 +374,7 @@
       "id": "smartcare_subscription_contract_start",
       "index": 3,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( SwitchGroup1.selectedValues.includes(\"START DATE\")))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -360,7 +408,7 @@
       "id": "smartcare_subscription_id",
       "index": 1,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( SwitchGroup1.selectedValues.includes(\"ID\")))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -394,7 +442,7 @@
       "id": "smartcare_subscription_id_po_number",
       "index": 2,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( SwitchGroup1.selectedValues.includes(\"PO\")))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -428,7 +476,7 @@
       "id": "smartcare_subscription_origin",
       "index": 6,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( SwitchGroup1.selectedValues.includes(\"ORIGIN\")))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
