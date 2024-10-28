@@ -1,0 +1,80 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "defaultSelectedValues": "[\n  \"BLUE\"\n]",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "yokcl5a0xm",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "Column Visability",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "8",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "options": [
+    {
+      "label": "ID",
+      "value": "1"
+    },
+    {
+      "label": "Machines",
+      "value": "OPTION1"
+    },
+    {
+      "label": "PO",
+      "value": "OPTION2"
+    },
+    {
+      "label": "END DATA",
+      "value": "OPTION3"
+    },
+    {
+      "label": "START DATE",
+      "value": "OPTION4"
+    },
+    {
+      "label": "TYPE",
+      "value": "OPTION5"
+    },
+    {
+      "label": "ORIGIN",
+      "value": "OPTION6"
+    }
+  ],
+  "originalBottomRow": 22,
+  "originalTopRow": 12,
+  "parentColumnSpace": 13.6650390625,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 35,
+  "topRow": 12,
+  "type": "CHECKBOX_GROUP_WIDGET",
+  "version": 2,
+  "widgetId": "4cn1f48amq",
+  "widgetName": "CheckboxGroup1"
+}

@@ -1,0 +1,2 @@
+SELECT * FROM kal_meta_data."kal_smartcare_subscription_id_attributes"
+WHERE smartcare_subscription_id = {{appsmith.store.subscription_id}};
